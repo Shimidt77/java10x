@@ -4,7 +4,7 @@ public class NinjaBasico implements Ninja {
 
     String nome;
     int idade;
-    String habilidade;
+    Tipohabilidade habilidade;
 
     @Override
     public void mostrarInformacoes() {
@@ -16,5 +16,11 @@ public class NinjaBasico implements Ninja {
     @Override
     public void executarHabilidade() {
         System.out.println("Eu sou um ninja básico não tenho habilidade especial!");
+    }
+
+    public NinjaBasico(String nome, int idade, Tipohabilidade habilidade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.habilidade = habilidade;
     }
 }
